@@ -1,9 +1,11 @@
+// src/components/Image.js
 import React from 'react';
+import './Image.css';
 
-const Image = ({ image, onClick }) => {
+const Image = ({ src, onClick }) => {
   return (
     <div className="image-container" onClick={onClick}>
-      <img src={image.src} alt={image.alt} />
+      <img src={src} alt="" className="image" />
     </div>
   );
 };
